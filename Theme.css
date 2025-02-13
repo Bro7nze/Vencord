@@ -24,7 +24,7 @@
   --accent-saturation: 100%;
   --accent-lightness: 50%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
-  --accent-opacity: 0.3;
+  --accent-opacity: 1;
   --accent-text-color: rgb(255, 255, 255);
   --alert-hue: 359;
   --alert-saturation: 66.7%;
