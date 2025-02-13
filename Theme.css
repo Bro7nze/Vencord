@@ -1,11 +1,9 @@
 [class*="sidebarRegion"] {
   flex: none;
 }
-
 [class*="item"] {
   padding: unset;
 }
-
 [class*="contentColumn"] {
   max-width: none;
 }
