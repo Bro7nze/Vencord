@@ -1,3 +1,7 @@
+[class*="contentColumn"] {
+  max-width: none;
+}
+
 :root {
 	--settingsicons_v: var(--settingsicons_s, var(--settingsicons, 1));
 	--use-settingsicons: calc(var(--settingsicons_v) / (var(--settingsicons_v) + 0.00000000000000000000001));
