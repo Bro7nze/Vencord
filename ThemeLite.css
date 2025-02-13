@@ -1,0 +1,50 @@
+.modeSelected__2ea32 a.link__2ea32,
+.modeSelected__2ea32.typeThread__2ea32 .link__2ea32 {
+  background-color: rgba(148, 0, 234, 0.724);
+
+  &:hover {
+    background-color: rgba(148, 0, 234, 0.473);
+  }
+
+  /* blurple channels */
+}
+.sidebarRegion__23e6b {
+  max-width: 300px;
+
+  .sidebarRegionScroller__23e6b {
+    justify-content: flex-start;
+
+    .sidebar__23e6b {
+      width: 300px;
+      padding: 60px 0 6px 20px;
+
+      .item_b3f026 {
+        padding: 10px 10px;
+        border-radius: 12px 0 0 12px;
+
+        &.selected_b3f026 {
+          background-color: rgba(148, 0, 234, 0.724);
+        }
+      }
+    }
+  }
+
+  /* makes sidebar big, adds channel styling */
+  .searchBar_c7e907 {
+    margin-right: 16px;
+  }
+
+  .mask__68edb {
+    height: 100px;
+    contain: none;
+    overflow: visible;
+
+    [mask^="url(#uid_"] {
+      mask: none !important;
+
+      .banner__68edb {
+        width: 100vw;
+      }
+    }
+  }
+}
