@@ -1,5 +1,5 @@
 :root {
-  --app-bg: url(https://imgur.com/a/BP9QUG1);
+  --app-bg: url(https://imgur.com/a/win-u1iGjSO);
   --app-blur: 6px;
   --app-margin: 24px;
   --app-radius: 10px;
@@ -10,10 +10,10 @@
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
   --accent-hue: 156;
   --accent-saturation: 77.5%;
-  --accent-lightness: 50%;
+  --accent-lightness: 47.1%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
-  --accent-opacity: 0;
-  --accent-text-color: #ffffff;
+  --accent-opacity: 1;
+  --accent-text-color: #000;
   --alert-hue: 359;
   --alert-saturation: 66.7%;
   --alert-lightness: 54.1%;
@@ -6001,14 +6001,6 @@ body {
  *  VISUAL REFRESH
  *
  */
-.visual-refresh {
-  /* servers */
-  /* channels and private sidebar */
-  /* chat */
-  /* members list */
-  /* friends list */
-  /* settings */
-}
 .visual-refresh .bg__960e4 {
   background-color: transparent;
 }
@@ -6084,11 +6076,38 @@ body {
 .visual-refresh .stackedBars__74017 {
   background-color: transparent;
 }
+.visual-refresh .container_f369db {
+  background-color: transparent;
+}
+.visual-refresh .container__9a337, .visual-refresh .container_faa96b {
+  background-color: var(--card-color);
+}
+.visual-refresh .container__9a337:hover, .visual-refresh .container_faa96b:hover {
+  background-color: var(--card-color-hover);
+}
+.visual-refresh .resizeHandle__01ae2 {
+  background-color: transparent;
+}
+.visual-refresh .container__01ae2 {
+  background-color: var(--main-content-color);
+  border: none;
+}
+.visual-refresh .pollContainer_b7e1cb {
+  background-color: var(--textarea-block-color);
+  border: none;
+}
+.visual-refresh .membersWrap_c8ffbb {
+  background-color: transparent;
+  border-left: none;
+}
 .visual-refresh .container__0f2e8 {
   background-color: var(--background-modifier-hover);
 }
 .visual-refresh .container__0f2e8.selected__0f2e8 {
   background-color: var(--background-modifier-selected);
+}
+.visual-refresh .memberInner__5d473 {
+  height: 100%;
 }
 .visual-refresh .container__133bf {
   border-top: none;
