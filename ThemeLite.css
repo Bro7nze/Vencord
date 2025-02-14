@@ -1,7 +1,7 @@
 .modeSelected__2ea32 a.link__2ea32,
 .modeSelected__2ea32.typeThread__2ea32 .link__2ea32 {
     background: linear-gradient(360deg, rgb(78, 0, 123) 20%, rgb(122, 0, 193) 65%);
-
+    
   &:hover {
     box-shadow: 0px 0px 15px rgb(255, 255, 255);
   }
@@ -28,7 +28,7 @@
          box-shadow: 3px 3px 10px rgba(24, 24, 24, 0.374);
          z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
          overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
-         backdrop-filter: blur(10px); /* Γυαλιστερό αποτέλεσμα */
+         backdrop-filter: blur(7px); /* Γυαλιστερό αποτέλεσμα */
         }
 
         &.selected_b3f026::before {
@@ -38,7 +38,7 @@
          background: linear-gradient(360deg, rgb(78, 0, 123) 20%, rgb(122, 0, 193) 65%);
          pointer-events: none;
          z-index: -1; /* Τοποθετεί το gradient πίσω από το κείμενο */
-         filter: blur(4px); /* Δημιουργεί μια θολούρα για να ενισχύσει το γυαλιστερό αποτέλεσμα */
+         filter: blur(7px); /* Δημιουργεί μια θολούρα για να ενισχύσει το γυαλιστερό αποτέλεσμα */
         }
 
         &.selected_b3f026:hover {
