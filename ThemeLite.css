@@ -1,4 +1,12 @@
-  /* Channels Color */
+.theme-dark .button__201d5.lookFilled__201d5.colorBrand__201d5, .theme-dark .button__201d5.lookFilled__201d5.colorGreen__201d5, .theme-dark .button__201d5.lookFilled__201d5.colorBrandNew__8872c {
+  background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
+  border-width: 1px;
+  border-style: inset;
+  box-shadow: -2px 5px 10px rgb(24, 24, 24);
+  border-color: rgba(42, 44, 48, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
+  color:  rgb(255, 255, 255);
+}
+/* Channels Color */
 .modeSelected__2ea32 a.link__2ea32,
 .modeSelected__2ea32.typeThread__2ea32 .link__2ea32 {
 
