@@ -1,14 +1,24 @@
+  /* Channels Color */
 .modeSelected__2ea32 a.link__2ea32,
 .modeSelected__2ea32.typeThread__2ea32 .link__2ea32 {
-    background: linear-gradient(360deg, rgb(78, 0, 123) 20%, rgb(122, 0, 193) 65%);
-    box-shadow: 3px 3px 10px rgba(24, 24, 24, 0.507);
-    
-  &:hover {
-    box-shadow: 0px 0px 15px rgb(255, 255, 255);
-  }
 
-  /* blurple channels */
+         background: linear-gradient(360deg, rgb(53, 0, 83) 25%, rgba(104, 0, 164, 0.779) 65%);
+         position: relative;
+         box-shadow: -5px 7px 9px rgb(24, 24, 24);
+         z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
+         overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
+         backdrop-filter: blur(55px);
+    
+        &:hover {
+        background: linear-gradient(360deg, rgb(53, 0, 83) 25%, rgba(104, 0, 164, 0.779) 65%);
+        position: relative;
+        box-shadow: -5px 7px 9px rgb(24, 24, 24);
+        z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
+        overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
+        filter:brightness(130%);
+        }
 }
+
 .sidebarRegion__23e6b {
   max-width: 300px;
 
@@ -17,23 +27,24 @@
 
     .sidebar__23e6b {
       width: 300px;
-      padding: 10px 0 6px 15px;
+      padding: 15px 0 7px 15px;
 
       .item_b3f026 {
-        padding: 10px 10px;
-        border-radius: 12px 0 0 12px;
+        padding: 11px 10px;
+        border-radius: 10px 0 0 12px;
 
         &.selected_b3f026 {
-         background: linear-gradient(360deg, rgb(78, 0, 123) 20%, rgb(122, 0, 193) 65%);
+
+         background: linear-gradient(360deg, rgb(53, 0, 83) 25%, rgba(104, 0, 164, 0.779) 65%);
          position: relative;
-         box-shadow: 3px 3px 10px rgba(24, 24, 24, 0.507);
+         box-shadow: -5px 7px 9px rgb(24, 24, 24);
          z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
          overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
-         backdrop-filter: blur(7px); /* Γυαλιστερό αποτέλεσμα */
+         backdrop-filter: blur(75px);
         }
         
         &.selected_b3f026:hover {
-         box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.58);
+         filter:brightness(110%);
         }        
         }
         }
@@ -41,8 +52,10 @@
 
   /* makes sidebar big, adds channel styling */
   .searchBar_c7e907 {
-    margin-right: 16px;
-  }
+    margin-right: 1px;
+    box-shadow: -5px 7px 9px rgb(24, 24, 24);
+    background: linear-gradient(360deg, rgba(44, 44, 44, 0.868) 20%, rgb(65, 65, 65) 65%);   
+    }
 
   .mask__68edb {
     height: 100px;
