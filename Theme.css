@@ -2022,13 +2022,16 @@ body {
  *
  */
 .container__87bf1 {
-  background-color: var(--switch-slider-color) !important;
+  background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%)!important;
+         box-shadow: -2px 5px 10px rgb(24, 24, 24);
+         backdrop-filter: blur(55px);
+         filter:brightness(120%);
 }
 .container__87bf1 .slider__87bf1 rect {
-  fill: var(--switch-knob-color) !important;
+  fill: rgb(105, 105, 105) !important;
 }
 .container__87bf1 .slider__87bf1 path {
-  fill: var(--switch-slider-color) !important;
+  fill: rgb(255, 255, 255) !important;
 }
 .container__87bf1.checked__87bf1 {
   --switch-slider-color: hsla(var(--accent-hsl),var(--accent-opacity));
