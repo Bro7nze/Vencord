@@ -1,5 +1,5 @@
 :root {
-  --app-bg: url(https://imgur.com/a/win-u1iGjSO);
+  --app-bg: url(https://i.imgur.com/bgmVeyt.jpg);
   --app-blur: 6px;
   --app-margin: 24px;
   --app-radius: 10px;
@@ -2022,16 +2022,13 @@ body {
  *
  */
 .container__87bf1 {
-  background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%)!important;
-         box-shadow: -2px 5px 10px rgb(24, 24, 24);
-         backdrop-filter: blur(55px);
-         filter:brightness(120%);
+  background-color: var(--switch-slider-color) !important;
 }
 .container__87bf1 .slider__87bf1 rect {
-  fill: rgb(105, 105, 105) !important;
+  fill: var(--switch-knob-color) !important;
 }
 .container__87bf1 .slider__87bf1 path {
-  fill: rgb(255, 255, 255) !important;
+  fill: var(--switch-slider-color) !important;
 }
 .container__87bf1.checked__87bf1 {
   --switch-slider-color: hsla(var(--accent-hsl),var(--accent-opacity));
