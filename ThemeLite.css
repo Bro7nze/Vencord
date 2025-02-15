@@ -5,7 +5,7 @@
   border-radius: 10px;
   box-shadow: -2px 5px 10px rgb(24, 24, 24);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  var(--Text-Card-Boxes-Color);
+  color:  var(--textarea-color);
 }
 [class*="vc-addon-card"] {
   background: var(--Card-Boxes-Color);
@@ -14,7 +14,7 @@
   border-radius: 10px;
   box-shadow: -2px 5px 10px rgb(24, 24, 24);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  var(--Text-Card-Boxes-Color);
+  color:  var(--textarea-color);
 }
 
 [class*="vc-settings-card cardPrimary__73069 card__73069"] {
@@ -24,7 +24,7 @@
   border-radius: 10px;
   box-shadow: -2px 5px 10px rgb(24, 24, 24);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  var(--Text-Card-Boxes-Color);
+  color:  var(--textarea-color);
 }
 
 [class*="vc-settings-tab-bar top_b3f026"] {
@@ -34,7 +34,7 @@
   border-radius: 10px;
   box-shadow: -2px 5px 10px rgb(24, 24, 24);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  var(--Text-Card-Boxes-Color);
+  color:  var(--textarea-color);
 }
 
 [class*="vc-plugins-info-card cardPrimary__73069 card__73069"] {
@@ -43,7 +43,7 @@
   border-style: inset;
   box-shadow: -2px 5px 10px rgb(24, 24, 24);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  var(--Text-Card-Boxes-Color);
+  color:  var(--textarea-color);
 }
 
 .theme-dark .button__201d5.lookFilled__201d5.colorBrand__201d5, .theme-dark .button__201d5.lookFilled__201d5.colorGreen__201d5, .theme-dark .button__201d5.lookFilled__201d5.colorBrandNew__8872c {
@@ -52,7 +52,7 @@
   border-style: inset;
   box-shadow: -2px 5px 10px rgb(24, 24, 24);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  var(--Text-Card-Boxes-Color);
+  color:  var(--textarea-color);
 }
 /* Channels Color */
 .modeSelected__2ea32 a.link__2ea32,
