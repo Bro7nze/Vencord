@@ -44,7 +44,7 @@
 
         &.selected_b3f026 {
 
-         background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
+         background: var(--Card-Boxes-Color); 
          position: relative;
          box-shadow: -7px 5px 12px rgba(0, 0, 0, 0.584);
          z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
@@ -66,7 +66,7 @@
     border-radius: 15px;
     margin-right: 1px;
     box-shadow: -7px 5px 12px rgba(0, 0, 0, 0.584);
-    background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);  
+    background: var(--Card-Boxes-Color);   
     }
     
   .mask__68edb {
