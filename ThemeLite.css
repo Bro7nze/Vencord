@@ -1,3 +1,51 @@
+[class*="vc-settings-quickActions-pill"] {
+  background: var(--Card-Boxes-Color);
+  border-width: 1px;
+  border-style: inset;
+  border-radius: 10px;
+  box-shadow: -2px 5px 10px rgb(24, 24, 24);
+  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
+  color:  var(--Text-Card-Boxes-Color);
+}
+[class*="vc-addon-card"] {
+  background: var(--Card-Boxes-Color);
+  border-width: 1px;
+  border-style: inset;
+  border-radius: 10px;
+  box-shadow: -2px 5px 10px rgb(24, 24, 24);
+  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
+  color:  var(--Text-Card-Boxes-Color);
+}
+
+[class*="vc-settings-card cardPrimary__73069 card__73069"] {
+  background: var(--Card-Boxes-Color);
+  border-width: 1px;
+  border-style: inset;
+  border-radius: 10px;
+  box-shadow: -2px 5px 10px rgb(24, 24, 24);
+  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
+  color:  var(--Text-Card-Boxes-Color);
+}
+
+[class*="vc-settings-tab-bar top_b3f026"] {
+  background: var(--Card-Boxes-Color);
+  border-width: 1px;
+  border-style: inset;
+  border-radius: 10px;
+  box-shadow: -2px 5px 10px rgb(24, 24, 24);
+  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
+  color:  var(--Text-Card-Boxes-Color);
+}
+
+[class*="vc-plugins-info-card cardPrimary__73069 card__73069"] {
+  background: var(--Card-Boxes-Color);
+  border-width: 1px;
+  border-style: inset;
+  box-shadow: -2px 5px 10px rgb(24, 24, 24);
+  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
+  color:  var(--Text-Card-Boxes-Color);
+}
+
 .theme-dark .button__201d5.lookFilled__201d5.colorBrand__201d5, .theme-dark .button__201d5.lookFilled__201d5.colorGreen__201d5, .theme-dark .button__201d5.lookFilled__201d5.colorBrandNew__8872c {
   background: var(--Card-Boxes-Color);
   border-width: 1px;
