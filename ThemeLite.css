@@ -77,13 +77,6 @@
 }
 
 .sidebarRegion__23e6b {
-  max-width: 300px;
-  .sidebarRegionScroller__23e6b {
-  .item_b3f026 {
-  padding: 8px 10px;
-  border-radius: 15px;
-  }
-  }
   &.selected_b3f026 {
   background: var(--Card-Boxes-Color); 
   position: relative;
@@ -97,7 +90,7 @@
   &.selected_b3f026:hover {
   filter:brightness(100%);
   }        
-}   
+}     
  /* makes sidebar big, adds channel styling */
   .searchBar_c7e907 {
   border-radius: 15px;
