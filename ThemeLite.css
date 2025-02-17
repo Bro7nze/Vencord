@@ -80,6 +80,7 @@
   .selected_b3f026 {
   background: var(--Card-Boxes-Color); 
   position: relative;
+  border-radius: 15px;
   box-shadow: -7px 5px 12px rgba(0, 0, 0, 0.584);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
