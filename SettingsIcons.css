@@ -1,11 +1,3 @@
-[class*="contentColumn"] {
-  max-width: none;
-}
-
-[class*="tabBarPanel_f8303a tabPanel__2666b"] {
-  max-width: 600px;
-}
-
 :root {
 	--settingsicons_v: var(--settingsicons_s, var(--settingsicons, 1));
 	--use-settingsicons: calc(var(--settingsicons_v) / (var(--settingsicons_v) + 0.00000000000000000000001));
