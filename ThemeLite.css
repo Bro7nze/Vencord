@@ -60,7 +60,8 @@
 
   background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
   position: relative;
-  box-shadow: -2px 5px 10px rgb(24, 24, 24);
+  width: 210px;
+  box-shadow: 0px 0px 10px rgb(0, 231, 169);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   backdrop-filter: blur(55px);
@@ -69,7 +70,7 @@
   &:hover {
   background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
   position: relative;
-  box-shadow: -6px 7px 9px rgb(24, 24, 24);
+  box-shadow: 0px 0px 10px rgb(0, 199, 146);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   filter:brightness(100%);
@@ -80,8 +81,9 @@
   .selected_b3f026 {
   background: var(--Card-Boxes-Color); 
   position: relative;
+  width: 260px;
   border-radius: 15px;
-  box-shadow: -7px 5px 12px rgba(0, 0, 0, 0.584);
+  box-shadow: 0px 0px 15px rgba(0, 231, 169);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   color: rgb(255, 255, 255);
@@ -95,8 +97,9 @@
  /* makes sidebar big, adds channel styling */
   .searchBar_c7e907 {
   border-radius: 15px;
+  width: 260px;
   margin-right: 1px;
-  box-shadow: -7px 5px 12px rgba(0, 0, 0, 0.584);
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
   background: var(--Card-Boxes-Color);   
   }
     
@@ -110,4 +113,25 @@
   width: 100vw;
   }
   }
+}
+
+[class*="item__58105"] {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 11px rgba(255, 255, 255, 0.8); /* Green glow */
+}
+
+.pill_e5445c {
+    width: 100%;
+    height: 50px; /* Fixed missing unit */
+    opacity: 1;
+    /* pill rules */
+}
+
+.pill_e5445c [style="opacity: 1; height: 40px; transform: none;"] {
+    right: 68px;
+    height: 57px !important;  
+    background-color: rgb(0, 231, 169);
+    width: 100px;
+    border-radius: 0% 20% 20% 0%;
+    box-shadow: 0 0 11px rgba(0, 231, 169); /* Glowing effect */
 }
