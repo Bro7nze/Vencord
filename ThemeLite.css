@@ -79,6 +79,19 @@
 }
 
 .sidebarRegion__23e6b {
+
+  .sidebarRegionScroller__23e6b {
+    justify-content: flex-start;
+    .sidebar__23e6b {
+      width: 300px;
+      padding: 60px 0 6px 20px;
+      .item_b3f026 {
+      padding: 9px 10px;
+      }
+    }
+  }
+
+
   .selected_b3f026 {
   background: var(--Card-Boxes-Color); 
   position: relative;
@@ -93,7 +106,7 @@
   }       
   &.selected_b3f026:hover {
   filter:brightness(100%);
-  }        
+  }          
 }     
  /* makes sidebar big, adds channel styling */
   .searchBar_c7e907 {
