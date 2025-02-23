@@ -97,7 +97,7 @@
   position: relative;
   width: 260px;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px rgba(0, 231, 169);
+  box-shadow: 0px 0px 10px var(--box-shadows);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   color: rgb(0, 231, 169);
