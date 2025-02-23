@@ -62,7 +62,7 @@
   background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
   position: relative;
   width: 210px;
-  box-shadow: 0px 0px 10px rgb(0, 231, 169);
+  box-shadow: 0px 0px 10px var(--box-shadows);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   backdrop-filter: blur(55px);
@@ -71,7 +71,7 @@
   &:hover {
   background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
   position: relative;
-  box-shadow: 0px 0px 10px rgb(0, 199, 146);
+  box-shadow: 0px 0px 10px var(--box-shadows);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   filter:brightness(100%);
