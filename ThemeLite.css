@@ -62,7 +62,7 @@
   background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
   position: relative;
   width: 210px;
-  box-shadow: 0px 0px 10px var(--box-shadows);
+  box-shadow: 0px 0px 10px var(--common-color);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   backdrop-filter: blur(55px);
@@ -71,7 +71,7 @@
   &:hover {
   background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
   position: relative;
-  box-shadow: 0px 0px 10px var(--box-shadows);
+  box-shadow: 0px 0px 10px var(--common-color);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   filter:brightness(100%);
@@ -97,10 +97,10 @@
   position: relative;
   width: 260px;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px var(--box-shadows);
+  box-shadow: 0px 0px 10px var(--common-color);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
-  color: var(--box-shadows);
+  color: var(--common-color);
   backdrop-filter: blur(75px);
   filter:brightness(107%);
   }       
@@ -144,8 +144,8 @@
 .pill_e5445c [style="opacity: 1; height: 40px; transform: none;"] {
     right: 68px;
     height: 57px !important;  
-    background-color: var(--box-shadows);
+    background-color: var(--common-color);
     width: 90px;
     border-radius: 0% 20% 20% 0%;
-    box-shadow: 0 0 10px var(--box-shadows), 0.735; /* Glowing effect */
+    box-shadow: 0 0 10px var(--common-color), 0.735; /* Glowing effect */
 }
