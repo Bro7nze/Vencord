@@ -1,4 +1,127 @@
- /* Side bar in settings */
+/*
+ *
+ *	MARKUP
+ *
+ */
+.markup__75297 pre {
+  border-radius: var(--card-radius);
+}
+.markup__75297 code {
+  background-color: var(--textarea-block-color);
+  border-radius: var(--card-radius);
+  border: none;
+}
+.markup__75297 .wrapper_f61d60 {
+  background-color: rgba(var(--botTag-background), 0.25); /* Με διαφάνεια */
+  color: var(--common-color); /* Εμφανίζει το χρώμα κανονικά */
+}
+.markup__75297 .wrapper_f61d60:hover {
+  background-color: hsla(var(--mention-hsl), 0.475);
+  color: var(--common-color);
+}
+
+.spoilerMarkdownContent__54ab5 {
+  background-color: var(--textarea-block-color);
+}
+
+/*
+ *
+ *  TOOLTIP
+ *
+ */
+.tooltip__382e7 {
+  background-color: var(--common-color) !important;
+  border-radius: 10px;
+}
+.tooltip__382e7 .tooltipPointer__382e7 {
+  border-top-color: var(--common-color) !important;
+}
+.tooltip__382e7 .tooltipContent__382e7,
+.tooltip__382e7 .guildNameText_b1f768,
+.tooltip__382e7 .clickCTA__0f481 {
+  color: var(--white-500);;
+  text-shadow: -1 -1 3px rgba(0, 0, 0, 0.6); /* Σκιά για καθαρότητα */
+  font-weight: 700; /* Πιο έντονο κείμενο */
+  font-size: 17px; /* Ελαφρώς μεγαλύτερη γραμματοσειρά */
+}
+.tooltip__382e7 .anchor-1MIwyf {
+  color: var(--common-text-color);
+  text-decoration: underline;
+}
+.tooltip__382e7 .activityIcon_b1f768 {
+  color: var(--common-text-color) !important;
+}
+.tooltip__382e7 .muteText_b1f768 {
+  color: var(--common-text-color) !important;
+}
+
+.theme-dark,
+.theme-light {
+  --background-modifier-hover: rgba(255,255,255,0.075);
+  --background-modifier-active: rgba(255,255,255,0.1);
+  --background-modifier-selected: rgba(255,255,255,0.125);
+  --background-modifier-accent: rgba(255,255,255,0.175);
+  --text-brand: var(--common-color);
+  --text-link: var(--common-color);
+}
+
+/*Buttons*/
+.lookFilled__201d5.colorBrand__201d5 {
+  background-color: var(--common-color);
+  color: var(--common-text-color) !important;
+}
+.lookFilled__201d5.colorBrand__201d5:hover {
+  background-color: rgb(49, 49, 49);
+}
+.lookFilled__201d5.colorBrand__201d5:disabled{
+  background-color: var(--common-text-color);
+}
+.lookFilled__201d5.colorPrimary__201d5, .lookFilled__201d5.colorPrimary__201d5:disabled {
+  background-color: var(--common-color);
+  color: var(--common-text-color);
+  outline: black 1.5px;
+}
+
+/*
+ *
+ *  SWITCHES
+ *
+ */
+.container__87bf1 {
+  background-color: var( --common-color) !important;
+}
+.container__87bf1 .slider__87bf1 rect {
+  fill: var(--cycle-switch-slider-color) !important;
+}
+.container__87bf1 .slider__87bf1 path {
+  fill: var( --common-color) !important;
+}
+.container__87bf1 svg {
+  filter: none;
+}
+
+.botTag__82f07 {
+  border-radius: 5px !important;
+}
+.botTag__82f07.botTagRegular__82f07 {
+  background-color: var(--botTag-color);
+  color: var(--botTag-text-color);
+}
+.botTag__82f07 .botText__82f07 {
+  text-shadow: none;
+}
+.botTag__82f07 svg {
+  filter: none !important;
+}
+.botTag__82f07 path {
+  fill: var(--botTag-text-color);
+}
+
+.button__6e3f1 {
+  color:var(--common-color);
+}
+
+/* Side bar in settings */
 .sidebarRegion__23e6b {
   max-width: 300px;
   border-radius: 15px;
