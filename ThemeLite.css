@@ -400,3 +400,12 @@ div[data-list-item-id="guildsnav___home"] {
 [class*="inputWrapper__0f084"] {
   color: var(--common-color);
 }
+
+[class*="headerText__99e7c"] {
+  color: var(--common-color);
+}
+
+[class*="interactive_bf202d interactive__972a0 linkButton__972a0 interactiveSelected__972a0 selected_bf202d"],
+[class*="interactive_bf202d interactive__972a0 interactiveSelected__972a0 selected_bf202d"] {
+  color: var(--common-color);
+}
