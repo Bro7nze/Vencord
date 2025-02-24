@@ -1,3 +1,4 @@
+
 /**
  * @name Modern Look
  * @version 1.0
@@ -67,7 +68,7 @@
 
 .wrapper_c19a55.mentioned__5126c {
   border-color: var(--common-color);
-  box-shadow: inset 0px 0px 10px 3px var(--common-color), 0px 0px 13px 4px var(--common-color);
+  box-shadow: inset 0px 0px 10px 3px var(--common-color), 0px 0px 7px 4px var(--common-color);
 }
 
 
@@ -200,7 +201,8 @@ div[data-list-item-id="guildsnav___home"] {
   background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
   position: relative;
   width: 210px;
-  box-shadow: 0px 0px 10px var(--common-color);
+  border-color: var(--common-color);
+  box-shadow: inset 0px 0px 5px 3px var(--common-color), 0px 0px 7px 1.5px var(--common-color);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   backdrop-filter: blur(55px);
@@ -274,7 +276,8 @@ div[data-list-item-id="guildsnav___home"] {
   position: relative;
   width: 260px;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px var(--common-color);
+  border-color: var(--common-color);
+  box-shadow: inset 0px 0px 5px 3px var(--common-color), 0px 0px 7px 1.5px var(--common-color);
   z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
   overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
   color: var(--common-color);
@@ -290,7 +293,8 @@ div[data-list-item-id="guildsnav___home"] {
   border-radius: 15px;
   width: 260px;
   margin-right: 1px;
-  box-shadow: 0px 0px 10px  var(--common-color);
+  border-color: var(--common-color);
+  box-shadow: inset 0px 0px 5px 3px var(--common-color), 0px 0px 7px 1.5px var(--common-color);
   background: var(--Card-Boxes-Color);   
   }
     
