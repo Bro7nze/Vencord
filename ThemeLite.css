@@ -1,10 +1,8 @@
-
-
-/**
- * @name Modern Look
- * @version 1.0
- * @description Here it is Lite Theme,Settings Icons, Radial Status και Channel Recolor 
-  * @author Bro7nze
+/*
+* @name Modern Look
+* @version 1.0
+* @description Here it is Lite Theme,Settings Icons, Radial Status και Channel Recolor 
+* @author Bro7nze
 */
 
 
@@ -29,18 +27,17 @@
   --rs-streaming-color: #4c17a7;
   --rs-phone-visible: block;
   /*Other*/
-  --textarea-color: rgb(102, 0, 255);
+
   --Card-Boxes-Color: transparent;
   --home-image: url('https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif');
   --botTag-color: var(--common-color);
   --botTag-text-color: var(--common-text-color);
   --botTag-background: 0, 199, 165; /*Put numbers from --common-color*/
-  --common-color: rgba(0, 199, 165);
+  --common-color: rgb(0, 199, 165);
   --common-text-color: var(--interactive-active);
   --header-secondary: var(--common-color);
   --switch-slider-color:var(--common-color);
   --cycle-switch-slider-color:rgb(255, 255, 255);
-  --textshadow:-1px -1px 0 black,1px -1px 0 black,-1px  1px 0 black,1px  1px 0 black;
   
   /* Font and scrollbar color */
   --interactive-normal: #ffffff;
@@ -145,7 +142,7 @@ div[data-list-item-id="guildsnav___home"] {
   --background-modifier-hover: rgba(255,255,255,0.075);
   --background-modifier-active: rgba(255,255,255,0.1);
   --background-modifier-selected: rgba(255,255,255,0.125);
-  --background-modifier-accent: rgba(255,255,255,0.175);
+  --background-modifier-accent: var(--common-color);
   --text-brand: var(--common-color);
   --text-link: var(--common-color);
 }
