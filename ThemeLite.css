@@ -1,8 +1,55 @@
-/*
- *
- *	MARKUP
- *
- */
+/**
+ * @name Modern Look
+ * @version 1.0
+ * @description Here it is Lite Theme,Settings Icons, Radial Status και Channel Recolor 
+  * @author Bro7nze
+*/
+
+
+@import url('https://raw.githubusercontent.com/Bro7nze/Vencord/refs/heads/main/RadialStatus.css');
+@import url('https://raw.githubusercontent.com/Bro7nze/Vencord/refs/heads/main/SettingsIcons.css');
+@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css"); /* Old Windows titlebar - remove this @import if you wish to use default titlebar */
+
+:root {
+    /* For Radial Status */
+  --rs-small-spacing: 1.5px;
+  --rs-medium-spacing: 2px;
+  --rs-large-spacing: 2px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 4px;
+  --rs-large-width: 2px;
+  --rs-avatar-shape: 52%;
+  --rs-online-color: #3cff00;
+  --rs-idle-color: #ffa200;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #4c17a7;
+  --rs-phone-visible: block;
+  --textarea-color: rgb(255, 196, 0);
+  --Card-Boxes-Color: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
+  --home-image: url('https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif');
+  --common-color: rgb(124, 196, 189);
+  --common-text-color: rgb(255, 255, 255);
+  --header-secondary: var(--common-text-color);
+  --switch-slider-color:rgb(0, 255, 149);
+  --cycle-switch-slider-color:rgb(0, 0, 0);
+  --textshadow:-1px -1px 0 black,1px -1px 0 black,-1px  1px 0 black,1px  1px 0 black;
+  --botTag-color: var(--common-color);
+  --botTag-text-color: var(--common-text-color);
+  --botTag-background: 0, 255, 234; /*Put numbers from --common-color*/
+}
+
+/* Add custom home icon */
+div[data-list-item-id="guildsnav___home"] {
+	background: var(--home-image) top center/110% no-repeat;
+}
+/* Revome discord home icon */
+#app-mount [data-list-item-id="guildsnav___home"]>div {
+	color: transparent;
+	background-color: transparent;
+}
+
+/* MARKUP */
 .markup__75297 pre {
   border-radius: var(--card-radius);
 }
@@ -24,11 +71,7 @@
   background-color: var(--textarea-block-color);
 }
 
-/*
- *
- *  TOOLTIP
- *
- */
+/* TOOLTIP */
 .tooltip__382e7 {
   background-color: var(--common-color) !important;
   border-radius: 10px;
@@ -65,7 +108,7 @@
   --text-link: var(--common-color);
 }
 
-/*Buttons*/
+/* Buttons */
 .lookFilled__201d5.colorBrand__201d5 {
   background-color: var(--common-color);
   color: var(--common-text-color) !important;
@@ -82,11 +125,7 @@
   outline: black 1.5px;
 }
 
-/*
- *
- *  SWITCHES
- *
- */
+/* SWITCHES */
 .container__87bf1 {
   background-color: var( --common-color) !important;
 }
@@ -121,6 +160,47 @@
   color:var(--common-color);
 }
 
+/* Channels Color */
+.modeSelected__2ea32 a.link__2ea32,
+.modeSelected__2ea32.typeThread__2ea32 .link__2ea32 {
+
+  background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
+  position: relative;
+  width: 210px;
+  box-shadow: 0px 0px 10px var(--common-color);
+  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
+  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
+  backdrop-filter: blur(55px);
+  filter:brightness(107%);
+  
+  &:hover {
+  background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
+  position: relative;
+  box-shadow: 0px 0px 10px var(--common-color);
+  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
+  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
+  filter:brightness(100%);
+  }
+}
+
+.pill_e5445c {
+    width: 100%;
+    height: 50px; /* Fixed missing unit */
+    opacity: 1;
+    /* pill rules */
+}
+
+.pill_e5445c [style="opacity: 1; height: 40px; transform: none;"] {
+    right: 68px;
+    height: 55px !important;  
+    background-color: var(--common-color);
+    width: 90px;
+    border-radius: 0% 20% 20% 0%;
+    box-shadow: 0 0 9px var(--common-color); /* Glowing effect */
+}
+
+/*Settings*/
+
 /* Side bar in settings */
 .sidebarRegion__23e6b {
   max-width: 300px;
@@ -143,15 +223,54 @@
 [class*="tabBarPanel_f8303a tabPanel__2666b"] {
   max-width: 600px;
 }
+.sidebarRegion__23e6b {
 
-/* Add custom home icon */
-div[data-list-item-id="guildsnav___home"] {
-	background: var(--home-image) top center/110% no-repeat;
-}
-/* Revome discord home icon */
-#app-mount [data-list-item-id="guildsnav___home"]>div {
-	color: transparent;
-	background-color: transparent;
+  .sidebarRegionScroller__23e6b {
+    justify-content: flex-start;
+    .sidebar__23e6b {
+      width: 300px;
+      padding: 60px 0 6px 20px;
+      .item_b3f026 {
+      padding: 9px 10px;
+      }
+    }
+  }
+
+  .selected_b3f026 {
+  background: var(--Card-Boxes-Color); 
+  position: relative;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px var(--common-color);
+  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
+  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
+  color: var(--common-color);
+  backdrop-filter: blur(75px);
+  filter:brightness(107%);
+  }       
+  &.selected_b3f026:hover {
+  filter:brightness(100%);
+  }          
+}     
+ /* makes sidebar big, adds channel styling */
+  .searchBar_c7e907 {
+  border-radius: 15px;
+  width: 260px;
+  margin-right: 1px;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  background: var(--Card-Boxes-Color);   
+  }
+    
+  .mask__68edb {
+  height: 100px;
+  contain: none;
+  overflow: visible;
+  [mask^="url(#uid_"] {
+  mask: none !important;
+  .banner__68edb {
+  width: 100vw;
+  }
+  }
 }
 
 [class*="vc-addon-card"] {
@@ -201,97 +320,7 @@ div[data-list-item-id="guildsnav___home"] {
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
   color:  var(--common-text-color);
 }
-/* Channels Color */
-.modeSelected__2ea32 a.link__2ea32,
-.modeSelected__2ea32.typeThread__2ea32 .link__2ea32 {
-
-  background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
-  position: relative;
-  width: 210px;
-  box-shadow: 0px 0px 10px var(--common-color);
-  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
-  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
-  backdrop-filter: blur(55px);
-  filter:brightness(107%);
-  
-  &:hover {
-  background: linear-gradient(360deg, rgba(42, 44, 48, 0.779) 25%, rgba(70, 73, 81, 0.779) 65%);
-  position: relative;
-  box-shadow: 0px 0px 10px var(--common-color);
-  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
-  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
-  filter:brightness(100%);
-  }
-}
-
-.sidebarRegion__23e6b {
-
-  .sidebarRegionScroller__23e6b {
-    justify-content: flex-start;
-    .sidebar__23e6b {
-      width: 300px;
-      padding: 60px 0 6px 20px;
-      .item_b3f026 {
-      padding: 9px 10px;
-      }
-    }
-  }
-
-
-  .selected_b3f026 {
-  background: var(--Card-Boxes-Color); 
-  position: relative;
-  width: 260px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px var(--common-color);
-  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
-  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
-  color: var(--common-color);
-  backdrop-filter: blur(75px);
-  filter:brightness(107%);
-  }       
-  &.selected_b3f026:hover {
-  filter:brightness(100%);
-  }          
-}     
- /* makes sidebar big, adds channel styling */
-  .searchBar_c7e907 {
-  border-radius: 15px;
-  width: 260px;
-  margin-right: 1px;
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  background: var(--Card-Boxes-Color);   
-  }
-    
-  .mask__68edb {
-  height: 100px;
-  contain: none;
-  overflow: visible;
-  [mask^="url(#uid_"] {
-  mask: none !important;
-  .banner__68edb {
-  width: 100vw;
-  }
-  }
-}
-
 [class*="item__58105"] {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow */
-}
-
-.pill_e5445c {
-    width: 100%;
-    height: 50px; /* Fixed missing unit */
-    opacity: 1;
-    /* pill rules */
-}
-
-.pill_e5445c [style="opacity: 1; height: 40px; transform: none;"] {
-    right: 68px;
-    height: 57px !important;  
-    background-color: var(--common-color);
-    width: 90px;
-    border-radius: 0% 20% 20% 0%;
-    box-shadow: 0 0 10px var(--common-color), 0.735; /* Glowing effect */
 }
