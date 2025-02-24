@@ -81,6 +81,14 @@ div[data-list-item-id="guildsnav___home"] {
 	background-color: transparent;
 }
 
+.guildSeparator__252b6 {
+    width: 80%;
+    height: 2px; /* Fixed missing unit */
+    margin-top: -5px;
+    border-radius: 0% 20% 20% 0%;
+    box-shadow: 0 0 10px var(--common-color); /* Glowing effect */
+}
+
 /* MARKUP */
 .markup__75297 pre {
   border-radius: var(--card-radius);
