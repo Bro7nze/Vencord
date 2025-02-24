@@ -39,7 +39,7 @@
   --common-text-color: var(--interactive-active);
   --header-secondary: var(--common-color);
   --switch-slider-color:var(--common-color);
-  --cycle-switch-slider-color:rgb(0, 0, 0);
+  --cycle-switch-slider-color:rgb(255, 255, 255);
   --textshadow:-1px -1px 0 black,1px -1px 0 black,-1px  1px 0 black,1px  1px 0 black;
   
   /* Font and scrollbar color */
@@ -56,6 +56,7 @@
   --scrollbar-opacity: 0.5;
   --scrollbar-opacity-hover: 0.3;
   --scrollbar-width: 5px;
+  --BG:rgb(250, 22, 22);
 }
 
 /* Messages */
@@ -168,17 +169,34 @@ div[data-list-item-id="guildsnav___home"] {
 
 /* SWITCHES */
 .container__87bf1 {
-  background-color: var(--switch-slider-color) !important;
+  background-color: gray !important; /* Κλειστός διακόπτης - γκρι */
 }
+
 .container__87bf1 .slider__87bf1 rect {
-  fill: var(--cycle-switch-slider-color) !important;
+  fill: rgb(0, 0, 0) !important; /* Κλειστός διακόπτης - γκρι */
 }
+
 .container__87bf1 .slider__87bf1 path {
-  fill: var(--switch-slider-color) !important;
+  fill: var(--cycle-switch-slider-color) !important; /* Κλειστός διακόπτης - γκρι */
 }
+
+.container__87bf1.checked__87bf1 {
+  background-color: var(--switch-slider-color) !important; /* Ανοιχτός διακόπτης */
+  --switch-knob-color: var(--accent-text-color);
+}
+
+.container__87bf1.checked__87bf1 .slider__87bf1 rect {
+  fill: var(--cycle-switch-slider-color) !important; /* Ανοιχτός διακόπτης */
+}
+
+.container__87bf1.checked__87bf1 .slider__87bf1 path {
+  fill: var(--switch-slider-color) !important; /* Ανοιχτός διακόπτης */
+}
+
 .container__87bf1 svg {
   filter: none;
 }
+
 
 /*BotTag*/
 .botTag__82f07 {
