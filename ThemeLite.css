@@ -266,8 +266,8 @@ div[data-list-item-id="guildsnav___home"] {
 /* Channels Color */
 .modeSelected__2ea32 a.link__2ea32,
 .modeSelected__2ea32.typeThread__2ea32 .link__2ea32 {
-
   background: var(--Card-Color);
+
   filter:brightness(100%);
   
   &:hover {
@@ -312,6 +312,7 @@ div[data-list-item-id="guildsnav___home"] {
 .selected_b3f026 {
   background: var(--Card-Color); 
   color: var(--common-color);
+  box-shadow: 0px 0px 15px 0px var(--box-shadow);  
   filter:brightness(100%);
   }      
   &.selected_b3f026:hover {
@@ -320,7 +321,7 @@ div[data-list-item-id="guildsnav___home"] {
   filter:brightness(177%);
 }          
   .searchBar_c7e907 {
-  background: var(--Card-Color);   
+  background: var(--Card-Color);
 }
 }
 
@@ -355,7 +356,7 @@ div[data-list-item-id="guildsnav___home"] {
   background: var(--Card-Boxes-Color);
   border-width: 1px;
   border-style: inset;
-  box-shadow: -0px 2px 13px var(--box-shadow);
+  box-shadow: -0px 3px 10px 5px var(--box-shadow);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
   color:  var(--common-text-color);
 }
@@ -369,7 +370,7 @@ div[data-list-item-id="guildsnav___home"] {
   border-width: 1px;
   border-style: inset;
   border-radius: 10px;
-  box-shadow: -0px 2px 13px rgb(24, 24, 24);
+  box-shadow: -0px 3px 10px 2.5px rgb(24, 24, 24);
   border-color: rgba(16, 48, 113, 0) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
 }
 
@@ -432,7 +433,7 @@ div[data-list-item-id="guildsnav___home"] {
   border-bottom: none;
   line-height: 25px;
   font-size: 17px;
-  box-shadow: 0px 3px 10px 0px var(--box-shadow);
+  box-shadow: 0px 3px 10px 5px var(--box-shadow);
   color: var(--interactive-normal) !important;
 }
 .tabBar__133bf .item_b3f026:first-child, .tabBar_d6f9e9 .item_b3f026:first-child, .tabBar__81b3e .item_b3f026:first-child, .top_b3f026 .item_b3f026:first-child, .topPill_b3f026 .item_b3f026:first-child, .settingsTabBar_f62afd .item_b3f026:first-child, .settingsTabBar_dc2e0e .item_b3f026:first-child {
@@ -445,4 +446,5 @@ div[data-list-item-id="guildsnav___home"] {
 .tabBar__133bf .item_b3f026.selected_b3f026, .tabBar_d6f9e9 .item_b3f026.selected_b3f026, .tabBar__81b3e .item_b3f026.selected_b3f026, .top_b3f026 .item_b3f026.selected_b3f026, .topPill_b3f026 .item_b3f026.selected_b3f026, .settingsTabBar_f62afd .item_b3f026.selected_b3f026, .settingsTabBar_dc2e0e .item_b3f026.selected_b3f026 {
   background-color: var(--common-color) !important;
   color: var(--interactive-active) !important;
+  box-shadow: 0px 3px 10px 5px var(--box-shadow);
 }
