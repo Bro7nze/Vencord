@@ -28,12 +28,13 @@
   --rs-phone-visible: block;
   /*Other*/
 
+  --Card-Color: linear-gradient(to right, transparent 15%, var(--common-color) 130%);
   --Card-Boxes-Color: transparent;
   --home-image: url('https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif');
   --botTag-color: var(--common-color);
   --botTag-text-color: var(--common-text-color);
   --botTag-background: 0, 199, 165; /*Put numbers from --common-color*/
-  --common-color: rgb(0, 199, 165);
+  --common-color: rgb(0, 172, 199);
   --common-text-color: var(--interactive-active);
   --header-secondary: var(--interactive-active);
   --switch-slider-color:var(--common-color);
@@ -266,23 +267,11 @@ div[data-list-item-id="guildsnav___home"] {
 .modeSelected__2ea32 a.link__2ea32,
 .modeSelected__2ea32.typeThread__2ea32 .link__2ea32 {
 
-  background: var(--Card-Boxes-Color);
-  position: relative;
-  width: 210px;
-  border-color: var(--common-color);
-  box-shadow: inset 0px 0px 5px 3px var(--common-color), 0px 0px 7px 1.5px var(--common-color);
-  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
-  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
-  backdrop-filter: blur(55px);
+  background: var(--Card-Color);
   filter:brightness(100%);
   
   &:hover {
-  background: var(--Card-Boxes-Color);
-  position: relative;
-  border-color: var(--common-color);
-  box-shadow: inset 0px 0px 5px 3px var(--common-color), 0px 0px 7px 1.5px var(--common-color);
-  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
-  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
+  background: var(--Card-Color);
   filter:brightness(107%);
   }
 }
@@ -308,15 +297,16 @@ div[data-list-item-id="guildsnav___home"] {
 /* Side bar in settings */
 .sidebarRegion__23e6b {
   max-width: 300px;
-  border-radius: 15px;
+  border-radius: 15px 0px 0px 15px;
   .sidebarRegionScroller__23e6b {
   .item_b3f026 {
   padding: 8px 10px;
-  border-radius: 15px;
+  border-radius: 0px 0px 0px 0px;
+  height: 50px;
 } 
 .sidebar__23e6b {
     width: 300px;
-    padding: 15px 0 7px 15px;
+    padding: 15px 0px 7px 15px;
 }
 }
 }
@@ -335,38 +325,29 @@ div[data-list-item-id="guildsnav___home"] {
     justify-content: flex-start;
     .sidebar__23e6b {
       width: 300px;
-      padding: 60px 0 6px 20px;
+      padding: 25px 0 6px 10px;
+      margin-right: 1px;
       .item_b3f026 {
-      padding: 9px 10px;
+      padding: 30px 10px;
+      border-radius: 0px 0px 0px 0px;
       }
     }
   }
 
   .selected_b3f026 {
-  background: var(--Card-Boxes-Color); 
-  position: relative;
-  width: 260px;
-  border-radius: 15px;
-  border-color: var(--common-color);
-  box-shadow: inset 0px 0px 5px 3px var(--common-color), 0px 0px 7px 1.5px var(--common-color);
-  z-index: 1; /* Διασφαλίζει ότι το κείμενο είναι πάνω από το gradient */
-  overflow: hidden; /* Κρύβει τα τυχόν εκτός ορίων στοιχεία */
+  background: var(--Card-Color); 
   color: var(--common-color);
-  backdrop-filter: blur(75px);
   filter:brightness(100%);
   }       
   &.selected_b3f026:hover {
+  background: var(--Card-Color); 
+  color: var(--common-color);
   filter:brightness(177%);
   }          
 }     
  /* makes sidebar big, adds channel styling */
   .searchBar_c7e907 {
-  border-radius: 15px;
-  width: 260px;
-  margin-right: 1px;
-  border-color: var(--common-color);
-  box-shadow: inset 0px 0px 5px 3px var(--common-color), 0px 0px 7px 1.5px var(--common-color);
-  background: var(--Card-Boxes-Color);   
+  background: var(--Card-Color);   
   }
     
   .mask__68edb {
@@ -391,25 +372,9 @@ div[data-list-item-id="guildsnav___home"] {
   color:  white;
 }
 
-[class*="vc-settings-card cardPrimary__73069 card__73069"] {
-  background: var(--Card-Boxes-Color);
-  border-width: 1px;
-  border-style: inset;
-  border-radius: 10px;
-  box-shadow: -0px 2px 13px rgb(24, 24, 24);
-  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  var(--common-text-color);
-}
 
-[class*="vc-settings-tab-bar top_b3f026"] {
-  background: var(--Card-Boxes-Color);
-  border-width: 1px;
-  border-style: inset;
-  border-radius: 10px;
-  box-shadow: -0px 2px 13px rgb(24, 24, 24);
-  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  var(--common-text-color);
-}
+
+
 
 [class*="vc-plugins-info-card cardPrimary__73069 card__73069"] {
   background: var(--Card-Boxes-Color);
@@ -453,4 +418,64 @@ div[data-list-item-id="guildsnav___home"] {
 [class*="interactive_bf202d interactive__972a0 linkButton__972a0 interactiveSelected__972a0 selected_bf202d"],
 [class*="interactive_bf202d interactive__972a0 interactiveSelected__972a0 selected_bf202d"] {
   color: var(--common-color);
+}
+
+.vc-settings-tab-bar {
+  margin-top: 24px;
+  margin-bottom: 0 !important;
+  padding-top: 10px;
+  border-bottom: 1px solid var(--background-modifier-accent) !important;
+}
+.vc-settings-tab-bar .item_b3f026 {
+  margin: 8px;
+  padding: 2px 8px;
+  border-radius: var(--button-radius);
+  border-bottom: none;
+  line-height: 20px;
+  font-size: 16px;
+  color: #ffffff !important;
+}
+.vc-settings-tab-bar .item_b3f026:hover {
+  background-color: var(--background-modifier-hover) !important;
+  color: var(--interactive-hover) !important;
+}
+.vc-settings-tab-bar .selected-1sf9UK.item_b3f026 {
+  background-color: var(--background-modifier-selected) !important;
+  color: var(--interactive-active) !important;
+}
+.vc-settings-tab-bar .item_b3f026:first-child {
+  margin-left: 0;
+}
+.vc-settings-tab-bar .item_b3f026:last-child {
+  margin-right: 0;
+}
+.vc-settings-tab-bar + .divider_ae36e5 {
+  display: none;
+}
+/*
+ *
+ *  TAB BAR
+ *
+ */
+.tabBar__133bf .item_b3f026, .tabBar_d6f9e9 .item_b3f026, .tabBar__81b3e .item_b3f026, .top_b3f026 .item_b3f026, .topPill_b3f026 .item_b3f026, .settingsTabBar_f62afd .item_b3f026, .settingsTabBar_dc2e0e .item_b3f026 {
+  min-width: 40px;
+  margin: 8px;
+  padding: 2px 8px;
+  background-color: transparent !important;
+  border-radius: 2px;
+  border-bottom: none;
+  line-height: 25px;
+  font-size: 17px;
+  color: var(--interactive-normal) !important;
+}
+.tabBar__133bf .item_b3f026:first-child, .tabBar_d6f9e9 .item_b3f026:first-child, .tabBar__81b3e .item_b3f026:first-child, .top_b3f026 .item_b3f026:first-child, .topPill_b3f026 .item_b3f026:first-child, .settingsTabBar_f62afd .item_b3f026:first-child, .settingsTabBar_dc2e0e .item_b3f026:first-child {
+  margin-left: 0;
+}
+.tabBar__133bf .item_b3f026:hover, .tabBar_d6f9e9 .item_b3f026:hover, .tabBar__81b3e .item_b3f026:hover, .top_b3f026 .item_b3f026:hover, .topPill_b3f026 .item_b3f026:hover, .settingsTabBar_f62afd .item_b3f026:hover, .settingsTabBar_dc2e0e .item_b3f026:hover {
+  background-color: var(--background-modifier-hover) !important;
+  color: var(--interactive-hover) !important;
+}
+.tabBar__133bf .item_b3f026.selected_b3f026, .tabBar_d6f9e9 .item_b3f026.selected_b3f026, .tabBar__81b3e .item_b3f026.selected_b3f026, .top_b3f026 .item_b3f026.selected_b3f026, .topPill_b3f026 .item_b3f026.selected_b3f026, .settingsTabBar_f62afd .item_b3f026.selected_b3f026, .settingsTabBar_dc2e0e .item_b3f026.selected_b3f026 {
+  background-color: var(--common-color) !important;
+  color: var(--interactive-active) !important;
 }
