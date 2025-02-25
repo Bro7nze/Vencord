@@ -57,6 +57,34 @@
   --BG:rgb(250, 22, 22);
 }
 
+::-webkit-scrollbar {
+  width: var(--scrollbar-width) !important;
+  height: var(--scrollbar-width) !important;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--scrollbar-color), var(--scrollbar-opacity)) !important;
+  border-radius: calc(var(--scrollbar-width) / 2) !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--scrollbar-color), var(--scrollbar-opacity-hover)) !important;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+.thin__99f8c::-webkit-scrollbar {
+  width: calc(var(--scrollbar-width) / 2) !important;
+  height: calc(var(--scrollbar-width) / 2) !important;
+}
+
+.none_d125d2::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
 /* Reactions Hover */
 [class^=reaction_]:not(:has([class^=burstGlow_])) .emoji {
   transition: transform 0.5s ease;
