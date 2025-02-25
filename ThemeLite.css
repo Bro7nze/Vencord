@@ -57,6 +57,14 @@
   --BG:rgb(250, 22, 22);
 }
 
+/* Reactions Hover */
+[class^=reaction_]:not(:has([class^=burstGlow_])) .emoji {
+  transition: transform 0.5s ease;
+}
+[class^=reaction_]:not(:has([class^=burstGlow_])):hover .emoji {
+  transform: translateY(-10px) scale(1.5);
+}
+
 /* Messages */
 .newMessagesBar__0f481,
 .jumpToPresentBar__0f481 {
