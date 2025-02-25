@@ -34,7 +34,7 @@
   --botTag-color: var(--common-color);
   --botTag-text-color: var(--common-text-color);
   --botTag-background: 0, 199, 165; /*Put numbers from --common-color*/
-  --common-color: rgb(0, 172, 199);
+  --common-color: rgb(0, 199, 165);
   --common-text-color: var(--interactive-active);
   --header-secondary: var(--interactive-active);
   --switch-slider-color:var(--common-color);
@@ -55,7 +55,7 @@
   --scrollbar-opacity: 0.5;
   --scrollbar-opacity-hover: 0.3;
   --scrollbar-width: 5px;
-  --BG:rgb(250, 22, 22);
+  --box-shadow:rgba(0, 0, 0, 0.578);
 }
 
 ::-webkit-scrollbar {
@@ -302,12 +302,25 @@ div[data-list-item-id="guildsnav___home"] {
   .item_b3f026 {
   padding: 8px 10px;
   border-radius: 0px 0px 0px 0px;
-  height: 50px;
-} 
+  height: 30px;
+  } 
+}
 .sidebar__23e6b {
     width: 300px;
     padding: 15px 0px 7px 15px;
 }
+.selected_b3f026 {
+  background: var(--Card-Color); 
+  color: var(--common-color);
+  filter:brightness(100%);
+  }      
+  &.selected_b3f026:hover {
+  background: var(--Card-Color); 
+  color: var(--common-color);
+  filter:brightness(177%);
+}          
+  .searchBar_c7e907 {
+  background: var(--Card-Color);   
 }
 }
 
@@ -319,69 +332,22 @@ div[data-list-item-id="guildsnav___home"] {
   max-width: 600px;
 }
 
-.sidebarRegion__23e6b {
-
-  .sidebarRegionScroller__23e6b {
-    justify-content: flex-start;
-    .sidebar__23e6b {
-      width: 300px;
-      padding: 25px 0 6px 10px;
-      margin-right: 1px;
-      .item_b3f026 {
-      padding: 30px 10px;
-      border-radius: 0px 0px 0px 0px;
-      }
-    }
-  }
-
-  .selected_b3f026 {
-  background: var(--Card-Color); 
-  color: var(--common-color);
-  filter:brightness(100%);
-  }       
-  &.selected_b3f026:hover {
-  background: var(--Card-Color); 
-  color: var(--common-color);
-  filter:brightness(177%);
-  }          
-}     
- /* makes sidebar big, adds channel styling */
-  .searchBar_c7e907 {
-  background: var(--Card-Color);   
-  }
-    
-  .mask__68edb {
-  height: 100px;
-  contain: none;
-  overflow: visible;
-  [mask^="url(#uid_"] {
-  mask: none !important;
-  .banner__68edb {
-  width: 100vw;
-  }
-  }
-}
-
 [class*="vc-addon-card"] {
   background: var(--Card-Boxes-Color);
   border-width: 1px;
   border-style: inset;
   border-radius: 10px;
-  box-shadow: -0px 2px 13px rgb(24, 24, 24);
+  box-shadow: -0px 2px 13px var(--box-shadow);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
-  color:  white;
+  color:  var(--common-text-color);
 }
-
-
-
 
 
 [class*="vc-plugins-info-card cardPrimary__73069 card__73069"] {
   background: var(--Card-Boxes-Color);
   border-width: 1px;
   border-style: inset;
-  box-shadow: -0px 2px 13px rgb(24, 24, 24);
-  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
+  box-shadow: -0px 1px 13px var(--box-shadow);
   color:  var(--common-text-color);
 }
 
@@ -389,7 +355,7 @@ div[data-list-item-id="guildsnav___home"] {
   background: var(--Card-Boxes-Color);
   border-width: 1px;
   border-style: inset;
-  box-shadow: -0px 2px 13px rgb(24, 24, 24);
+  box-shadow: -0px 2px 13px var(--box-shadow);
   border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
   color:  var(--common-text-color);
 }
@@ -404,7 +370,7 @@ div[data-list-item-id="guildsnav___home"] {
   border-style: inset;
   border-radius: 10px;
   box-shadow: -0px 2px 13px rgb(24, 24, 24);
-  border-color: rgba(16, 48, 113, 0.016) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
+  border-color: rgba(16, 48, 113, 0) rgba(255, 255, 255, 0.08) rgba(0, 0, 0, 0.4);
 }
 
 [class*="inputWrapper__0f084"] {
@@ -466,6 +432,7 @@ div[data-list-item-id="guildsnav___home"] {
   border-bottom: none;
   line-height: 25px;
   font-size: 17px;
+  box-shadow: 0px 3px 10px 0px var(--box-shadow);
   color: var(--interactive-normal) !important;
 }
 .tabBar__133bf .item_b3f026:first-child, .tabBar_d6f9e9 .item_b3f026:first-child, .tabBar__81b3e .item_b3f026:first-child, .top_b3f026 .item_b3f026:first-child, .topPill_b3f026 .item_b3f026:first-child, .settingsTabBar_f62afd .item_b3f026:first-child, .settingsTabBar_dc2e0e .item_b3f026:first-child {
