@@ -59,6 +59,18 @@
   --list-item-transition:0.5s;
 }
 
+/*Categories Colors and zoom in Setting Session*/
+[class*="eyebrow_cf4812 headerText_b3f026"] {
+  color:  var(--common-color);
+}
+.sidebar__23e6b .item_b3f026 {
+    transition: var(--list-item-transition);
+}
+.sidebar__23e6b .item_b3f026:hover {
+    transform: translateX(27px) scale(1.2);
+    background: var(--Card-Color);
+}
+
 /*Zoom hover channels*/
 .wrapper__2ea32 .link__2ea32 {
     transition:  var(--list-item-transition);
