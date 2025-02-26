@@ -58,6 +58,12 @@
   --box-shadow:rgba(0, 0, 0, 0.578);
 }
 
+/*User name at bottom left*/
+[class*="text-sm/medium_cf4812 title_b6c092"] {
+  color: var(--common-color);
+  border: 10px black;
+}
+
 /*
  *
  *  MESSAGE REACTIONS
