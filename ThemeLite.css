@@ -396,6 +396,7 @@ div[data-list-item-id="guildsnav___home"] {
 .lookFilled__201d5.colorPrimary__201d5, .lookFilled__201d5.colorPrimary__201d5:disabled {
   background-color: var(--common-color);
   color: var(--common-text-color);
+  box-shadow: 0px 3px 5px 1.1px var(--box-shadow);
   outline: black 1.5px;
 }
 
@@ -663,3 +664,4 @@ div[data-list-item-id="guildsnav___home"] {
   color: var(--interactive-active) !important;
   box-shadow: 0px 3px 5px 1.1px var(--box-shadow);
 }
+
