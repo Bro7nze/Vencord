@@ -58,6 +58,16 @@
   --box-shadow:rgba(0, 0, 0, 0.578);
 }
 
+/*Zoom hover channels*/
+.wrapper__2ea32 .link__2ea32 {
+    transition:  var(--list-item-transition);
+}
+.wrapper__2ea32:hover .link__2ea32 {
+    transform: translateY(0px) scale(1.09);
+    background-color: transparent;
+   
+}
+
 /*User name at bottom left*/
 [class*="text-sm/medium_cf4812 title_b6c092"] {
   color: var(--common-color);
