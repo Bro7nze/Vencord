@@ -58,6 +58,33 @@
   --box-shadow:rgba(0, 0, 0, 0.578);
 }
 
+/*
+ *
+ *  MESSAGE REACTIONS
+ *
+ */
+.reaction_f8896c, .reaction__23977 {
+  background-color: var(--message-color);
+  border-radius: 50px;
+  border: none;
+}
+.reaction_f8896c:hover, .reaction__23977:hover {
+  background-color: var(--message-color);
+}
+.reaction_f8896c.reactionMe_f8896c, .reaction__23977.reactionMe_f8896c, .reaction_f8896c.reactionMe__23977, .reaction__23977.reactionMe__23977 {
+  background-color: var(--common-color);
+  border-color: transparent;
+}
+.reaction_f8896c.reactionMe_f8896c:hover, .reaction__23977.reactionMe_f8896c:hover, .reaction_f8896c.reactionMe__23977:hover, .reaction__23977.reactionMe__23977:hover {
+  background-color: var(--common-color);
+}
+.reaction_f8896c.reactionMe_f8896c .reactionCount_f8896c, .reaction__23977.reactionMe_f8896c .reactionCount_f8896c, .reaction_f8896c.reactionMe__23977 .reactionCount_f8896c, .reaction__23977.reactionMe__23977 .reactionCount_f8896c, .reaction_f8896c.reactionMe_f8896c .reactionCount__23977, .reaction__23977.reactionMe_f8896c .reactionCount__23977, .reaction_f8896c.reactionMe__23977 .reactionCount__23977, .reaction__23977.reactionMe__23977 .reactionCount__23977 {
+  color: var(--common-text-color);
+}
+.reaction_f8896c .burstGlow_f8896c, .reaction__23977 .burstGlow_f8896c {
+  border-radius: 50px;
+}
+
 ::-webkit-scrollbar {
   width: var(--scrollbar-width) !important;
   height: var(--scrollbar-width) !important;
