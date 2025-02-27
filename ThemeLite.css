@@ -59,6 +59,28 @@
   --list-item-transition:0.5s;
 }
 
+/*Hover in Dms*/
+/* Εφαρμογή σε όλα τα στοιχεία της sidebar */
+.channel__972a0{
+    transition: var(--list-item-transition);
+}
+
+/* Hover effect και στα DM */
+.channel__972a0:hover {
+    transform: translateX(27px) scale(1.2);
+    background: var(--Card-Color);
+    border-left: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Αλλαγή χρώματος στο επιλεγμένο DM */
+[class*="interactive_bf202d interactive__972a0 interactiveSelected__972a0 selected_bf202d"] {
+    color: var(--common-color);
+    background: var(--Card-Color);
+    border-radius: 0px; /* Προαιρετικά για πιο smooth εμφάνιση */
+}
+
 [class*="eyebrow_cf4812 headerText_b3f026"] {
   color:  var(--common-color);
   font-size: 16px;
