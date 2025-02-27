@@ -443,7 +443,7 @@ div[data-list-item-id="guildsnav___home"] {
 .theme-light {
   --background-modifier-hover: rgba(255, 255, 255, 0);
   --background-modifier-active: rgba(255,255,255,0.1);
-  --background-modifier-selected: rgba(255,255,255,0.125);
+  --background-modifier-selected: rgba(255, 255, 255, 0);
   --background-modifier-accent: var(--common-color);
   --text-brand: var(--common-color);
   --text-link: var(--link-color);
