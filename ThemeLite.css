@@ -624,11 +624,6 @@ div[data-list-item-id="guildsnav___home"] {
   color: var(--common-color);
 }
 
-[class*="interactive_bf202d interactive__972a0 linkButton__972a0 interactiveSelected__972a0 selected_bf202d"],
-[class*="interactive_bf202d interactive__972a0 interactiveSelected__972a0 selected_bf202d"] {
-  color: var(--common-color);
-}
-
 .vc-settings-card  {
   background-color: transparent !important;
   margin-top: 0px;
