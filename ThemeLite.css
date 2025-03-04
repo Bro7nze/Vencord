@@ -59,6 +59,26 @@
   --list-item-transition:0.5s;
 }
 
+/*hover icons in text area*/
+[class^=chat_] [class*=textArea_] {
+  margin-right: 24px;
+  +[class^=buttons_] {
+    position: absolute;
+    right: 0;
+    background-color: hsl(var(--primary-560-hsl) / 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    &:not(:hover)>:not(:last-child) {
+      display: none;
+      
+    }
+    /* Send message button fix */
+    &:not(:hover)>[class^=container_] button>div {
+      margin-left: 8px;
+    }
+  }
+}
+
 /*toggle channels text*/
 .toggle-button::after {
   content: "Toggle channels";
@@ -68,7 +88,7 @@
   left: 5%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.326);
-  color: #fff;
+  color: #ffffffe4
   padding: 5px;
   border-radius: 2.5px;
   opacity: 0;
