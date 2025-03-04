@@ -88,7 +88,7 @@
   left: 5.7%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.7);
-  color: #ffffffe4;
+  color: var(--common-color) !important;
   padding: 10px 15px;
   border-radius: 7px;
   opacity: 0;
