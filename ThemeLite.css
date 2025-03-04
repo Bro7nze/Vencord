@@ -85,13 +85,13 @@
   position: absolute;
   font-size: 16px;
   bottom: -60%;
-  left: 4.3%;
+  left: 5%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.326);
   color: #ffffffe4;
   padding: 11px 11px; /* Αύξηση του padding γύρω από το κείμενο (πάνω-κάτω 10px, αριστερά-δεξιά 15px) */
   border-radius: 7px;
-  opacity: 1; /* Κρυφό αρχικά */
+  opacity: 0; /* Κρυφό αρχικά */
   transition: opacity 0.5s ease, visibility 0.5s ease; /* Προσθήκη μετάβασης */
 }
 
