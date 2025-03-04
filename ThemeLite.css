@@ -79,25 +79,25 @@
   }
 }
 
-/*toggle channels text*/
+/* Toggle Channels text */
 .toggle-button::after {
   content: "Toggle Channels";
   position: absolute;
   font-size: 16px;
-  bottom: -50%;
-  left: 4.5%;
+  bottom: -60%;
+  left: 4.3%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.326);
-  color: #ffffffe4
-  padding: 5px;
-  border-radius: 2.5px;
-  opacity: 0;
-
+  color: #ffffffe4;
+  padding: 11px 11px; /* Αύξηση του padding γύρω από το κείμενο (πάνω-κάτω 10px, αριστερά-δεξιά 15px) */
+  border-radius: 7px;
+  opacity: 1; /* Κρυφό αρχικά */
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Προσθήκη μετάβασης */
 }
 
 .toggle-button:hover::after {
   opacity: 1;
-  visibility: visible;
+  visibility: visible; /* Εμφάνιση κατά το hover */
 }
 
 /*Hover in Dms*/
