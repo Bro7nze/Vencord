@@ -81,7 +81,7 @@
 
 /*toggle channels text*/
 .toggle-button::after {
-  content: "Toggle channels";
+  content: "Toggle Channels";
   position: absolute;
   font-size: 16px;
   bottom: -50%;
