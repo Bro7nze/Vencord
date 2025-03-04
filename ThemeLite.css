@@ -84,20 +84,35 @@
   content: "Toggle Channels";
   position: absolute;
   font-size: 16px;
-  bottom: -60%;
-  left: 4.8%;
+  bottom: -80%;
+  left: 5.7%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.326);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #ffffffe4;
-  padding: 11px 11px; /* Αύξηση του padding γύρω από το κείμενο (πάνω-κάτω 10px, αριστερά-δεξιά 15px) */
+  padding: 10px 15px;
   border-radius: 7px;
-  opacity: 0; /* Κρυφό αρχικά */
-  transition: opacity 0.5s ease, visibility 0.5s ease; /* Προσθήκη μετάβασης */
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  white-space: nowrap;
 }
 
-.toggle-button:hover::after {
+/* Βελάκι πάνω από το tooltip */
+.toggle-button::before {
+  content: "▸";
+  color: var(--common-color) !important;
+  size: 100px;
+  position: absolute;
+  bottom: calc(-17% - 0px); /* Τοποθετείται ακριβώς κάτω από το tooltip */
+  left: 1%;
+  transform: rotate(-90deg);
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.toggle-button:hover::after,
+.toggle-button:hover::before {
   opacity: 1;
-  visibility: visible; /* Εμφάνιση κατά το hover */
+  visibility: visible;
 }
 
 /*Hover in Dms*/
