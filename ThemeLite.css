@@ -34,7 +34,7 @@
   --botTag-color: var(--common-color);
   --botTag-text-color: var(--common-text-color);
   --botTag-background: 0, 199, 165; /*Put numbers from --common-color*/
-  --common-color: rgb(0, 199, 165);
+  --common-color: rgb(0, 189, 199);
   --common-text-color: var(--interactive-active);
   --header-secondary: var(--interactive-active);
   --switch-slider-color:var(--common-color);
@@ -58,7 +58,6 @@
   --box-shadow:rgba(0, 0, 0, 0.578);
   --list-item-transition:0.5s;
 }
-
 /*hover icons in text area*/
 [class^=chat_] [class*=textArea_] {
   margin-right: 24px;
@@ -107,6 +106,13 @@
   transform: rotate(-90deg);
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/*icons front of channels*/
+.icon__2ea32 {
+  opacity: 1;
+  scale: 90%;
+  margin-left: -5px;
 }
 
 .toggle-button:hover::after,
@@ -170,7 +176,8 @@
     transition:  var(--list-item-transition);
 }
 .wrapper__2ea32:hover .link__2ea32 {
-    transform: translateX(-20px) scale(1.2);
+    transform: translateX(-20px) scale(1.1);
+    width: 240px;
     background: var(--Card-Color);
    
 }
